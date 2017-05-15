@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/vote_page"
+    >
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:includeFontPadding="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="5dp"
+            />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_vote_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#ECEFF1"
+    />
+
+    <Button
+        android:id="@+id/btn_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="确定投票"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

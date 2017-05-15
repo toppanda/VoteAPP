@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <TextView
+        android:id="@+id/activity_vote_pager_subject_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:paddingTop="28dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_votere_pager_Theme"
+        android:gravity="center"
+        android:background="@color/colorFrontground"
+        />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/activity_vote_pager_view_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorFrontground"
+        />
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/activity_vote_pager_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </android.support.v4.view.ViewPager>
+
+
+
+
+
+</LinearLayout>

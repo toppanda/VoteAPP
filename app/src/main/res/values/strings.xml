@@ -1,0 +1,45 @@
+<resources>
+
+    <!--- 主界面字符 /> -->
+    <string name="app_name">人事评测</string>
+    <string name="welcomeinfo">济南市政府人事评测系统</string>
+    <string name="host">主持人入口</string>
+    <string name="join">投票人入口</string>
+    <!--- 主持人界面字符 /> -->
+    <string name="input_roomnumber">请输入评测表序号:</string>
+    <string name="input_password">请输入密钥:</string>
+    <string name="start_voting">开启投票</string>
+    <string name="end_voting">结束投票</string>
+    <string name="start_success">成功开启该评测表</string>
+    <string name="start_failure">开启该评测表失败</string>
+    <string name="end_success">该评测表成功关闭</string>
+    <string name="end_failure">该评测表关闭失败</string>
+    <string name="network_not_connected">网络未连接！</string>
+
+    <!---主持人界面 服务器返回msg /> -->
+    <string name="WrongRoomnumError">该评测表序号不存在</string>
+    <string name="WrongPasswordError">密码错误</string>
+    <string name="RoomHasOpenedError">该评测表已经开启</string>
+    <string name="DBUpdateError">数据库更新失败</string>
+    <string name="RoomHasNotOpenedError">该评测表还未开启</string>
+    <string name="RoomHasFinishedError">该评测表已经关闭</string>
+
+    <!--- 进入房间界面 /> -->
+    <string name="input_room_number">请输入评测表序号</string>
+    <string name="enter_voting">开始投票</string>
+    <!---进入房间界面 服务器返回msg /> -->
+    <string name="vRoomHasFinishedError">投票活动已经结束</string>
+    <string name="vRoomHasNotOpenedError">投票还未开始</string>
+
+    <!---进入显示结果界面 服务器返回msg /> -->
+
+    <string name="OnVoteError">正在投票中，不允许查看结果</string>
+    <string name="resultWrongRoomnumError">评测表序号错误</string>
+    <string name="resultdisplayProcessError">未收到POST数据</string>
+    <string name="resultInputError">输入为空</string>
+
+    <!--结果显示-->
+    <string name="res_name">选项：</string>
+    <string name="vote_activity_resName">评测结果</string>
+    <string name="vote_fragment_resItem">  当前主题：</string>
+</resources>

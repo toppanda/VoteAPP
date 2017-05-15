@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wmct.voteapp">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.InsertRoomActivity"
+                  android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity android:name=".Activity.VoteDetailActivity"></activity>
+        <activity android:name=".Activity.HostActivity"></activity>
+        <activity android:name=".Activity.VoteResPagerActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".Activity.ShowResultActivity"></activity>
+    </application>
+
+</manifest>

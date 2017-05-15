@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBackground"
+              >
+
+    <TextView
+        android:id="@+id/text_resiem_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="14dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/frgment_voteres"
+        android:background="@color/colorFrontground"
+        />
+
+    <ScrollView
+        android:id="@+id/votefragment_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorFrontground"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="4dp"
+            android:background="@color/colorFrontground">
+
+            <TextView
+                android:id="@+id/votefragment_text_resiem_options"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/frgment_voteresoption"
+                />
+
+            <TextView
+                android:id="@+id/votefragment_text_resiem_res"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/frgment_voteresoption"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_voteitem"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorFrontground"
+        />
+
+</LinearLayout>
